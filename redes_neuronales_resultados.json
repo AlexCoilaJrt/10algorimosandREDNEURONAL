@@ -1,0 +1,45 @@
+[
+  {
+    "nombre": "Perceptrón Multicapa (MLP)",
+    "accuracy": 0.9849056603773585,
+    "modelo": "MLPClassifier(alpha=0.001, hidden_layer_sizes=(100, 50, 25),\n              learning_rate='adaptive', max_iter=500, random_state=42)",
+    "tipo": "Red Neuronal Básica",
+    "capas": "3 capas ocultas (100, 50, 25)",
+    "activacion": "ReLU",
+    "optimizador": "Adam"
+  },
+  {
+    "nombre": "CNN para Texto",
+    "accuracy": 0.8981131911277771,
+    "modelo": "<Sequential name=sequential, built=True>",
+    "tipo": "Red Convolucional",
+    "capas": "Embedding + Conv1D + GlobalMaxPool + Dense",
+    "embedding_dim": 128,
+    "filtros": 128,
+    "kernel_size": 5
+  },
+  {
+    "nombre": "LSTM",
+    "accuracy": 0.5886792540550232,
+    "modelo": "<Sequential name=sequential_1, built=True>",
+    "tipo": "Red Recurrente",
+    "capas": "Embedding + LSTM(64) + LSTM(32) + Dense",
+    "lstm_units": [
+      64,
+      32
+    ],
+    "embedding_dim": 128
+  },
+  {
+    "nombre": "BiLSTM",
+    "accuracy": 0.8679245114326477,
+    "modelo": "<Sequential name=sequential_2, built=True>",
+    "tipo": "Red Bidireccional",
+    "capas": "Embedding + BiLSTM(64) + BiLSTM(32) + Dense",
+    "bilstm_units": [
+      64,
+      32
+    ],
+    "embedding_dim": 128
+  }
+]
